@@ -1,5 +1,5 @@
 var React = require('react');
-var styles = require('../styles')
+var styles = require('../styles');
 
 function Home (props) {
   return (

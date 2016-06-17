@@ -13,6 +13,10 @@ var styles = {
     fontSize: 45,
     color: '#fff',
     fontWeight: 100,
+  },
+  headerContainer: {
+    width: '100%',
+    height: '92%'
   }
 };
 
