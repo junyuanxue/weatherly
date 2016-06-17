@@ -1,9 +1,10 @@
 var React = require('react');
+var styles = require('../styles')
 
 function Home (props) {
   return (
-    <div>
-      <h1> Enter a City </h1>
+    <div style={styles.container}>
+      <h1 style={styles.header}> Enter a City </h1>
       <div>
         <form>
           <div>
