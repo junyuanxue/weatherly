@@ -1,18 +1,26 @@
 var React = require('react');
 var styles = require('../styles');
 
-function GetCity(props) {
+function GetWeatherButton (props) {
+  return (
+    <button className='btn btn-success' style={styles.margin}>
+      Get Weather
+    </button>
+  )
+}
+
+function InputCityField (props) {
+  return (
+    <input className='form-control' style={styles.margin} placeholder='London' type='text' />
+  )
+}
+
+function GetCity (props) {
   return (
     <div>
       <form>
-        <div className='form-group'>
-          <input className='form-control' style={styles.margin} placeholder='eg. London' type='text' />
-        </div>
-        <div>
-          <button className='btn btn-success' style={styles.margin}>
-            Get Weather
-          </button>
-        </div>
+        <InputCityField />
+        <GetWeatherButton />
       </form>
     </div>
   )
