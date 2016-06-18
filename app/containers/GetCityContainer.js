@@ -8,10 +8,9 @@ var GetCityContainer = React.createClass({
     }
   },
   handleSubmitCity: function () {
-    console.log(this.state.city)
+    console.log('City' + this.state.city)
   },
   handleUpdateCity: function (event) {
-    console.log(event)
     this.setState({
       city: event.target.value
     })
