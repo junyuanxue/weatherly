@@ -1,4 +1,5 @@
 var React = require('react');
+var PropTypes = React.PropTypes;
 var styles = require('../styles');
 
 function GetWeatherButton (props) {
