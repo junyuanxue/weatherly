@@ -17,6 +17,9 @@ var styles = {
   headerContainer: {
     width: '100%',
     height: '92%'
+  },
+  margin: {
+    marginTop: '1em',
   }
 };
 

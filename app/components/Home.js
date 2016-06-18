@@ -1,20 +1,12 @@
 var React = require('react');
 var styles = require('../styles');
+var GetCityContainer = require('../containers/GetCityContainer');
 
 function Home (props) {
   return (
-    <div style={styles.container}>
+    <div style={styles.container}  className='jumbotron text-center' >
       <h1 style={styles.header}> Enter a City </h1>
-      <div>
-        <form>
-          <div>
-            <input placeholder='eg. London' type='text' />
-          </div>
-          <div>
-            <button> Get Weather </button>
-          </div>
-        </form>
-      </div>
+      <GetCityContainer />
     </div>
   )
 }
