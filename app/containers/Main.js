@@ -1,12 +1,16 @@
 var React = require('react');
-var styles = require('../styles')
+var styles = require('../styles');
+var GetCityContainer = require('../containers/GetCityContainer');
 
 var Main = React.createClass({
   render: function () {
     return (
       <div style={styles.headerContainer}>
-        <h1>Main.js Header</h1>
-        {this.props.children}
+        <div style={styles.header}>
+          <h1>Weatherly</h1>
+          <GetCityContainer direction='row' />
+        </div>
+      {this.props.children}
       </div>
     )
   }

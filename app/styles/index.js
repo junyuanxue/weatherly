@@ -9,7 +9,7 @@ var styles = {
     height: '100%',
     width: '100%'
   },
-  header: {
+  prompt: {
     fontSize: 45,
     color: '#fff',
     fontWeight: 100,
@@ -18,9 +18,16 @@ var styles = {
     width: '100%',
     height: '92%'
   },
+  header: {
+    display: 'flex',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    background: '#44C4E8',
+    color: '#fff',
+    padding: 5
+  },
   margin: {
-    marginTop: '1em',
-    marginBottom: '1em'
+    margin: '0.5em',
   }
 };
 
