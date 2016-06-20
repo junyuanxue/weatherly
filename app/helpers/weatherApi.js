@@ -14,6 +14,7 @@ function getCurrentWeather (city) {
     .then(function (currentWeather) {
       console.log('###CURRENT WEAHTER###')
       console.log(currentWeather.data)
+      return currentWeather.data;
     });
 }
 
@@ -24,6 +25,7 @@ function getForecast (city) {
     .then(function (forecast) {
       console.log('***FORECAST***')
       console.log(forecast.data)
+      return forecast.data;
     });
 }
 

@@ -3,22 +3,28 @@ var Forecast = require('../components/Forecast');
 var weatherApi = require('../helpers/weatherApi');
 
 var ForecastContainer = React.createClass({
-  // weatherApi.getCurrentWeather(this.state.city)
-  // weatherApi.getForecast(this.state.city)
   getInitialState: function () {
     return {
-      isLoading: true
+      isLoading: true,
+      forecastData: {}
     }
   },
   componentDidMount: function () {
-    this.setState({
-      isLoading: true
-    })
+    var city = this.props.routeParams.city;
+    weatherApi.getForecast(city)
+      .then(function (forecastData) {
+        this.setState({
+          forecastData: forecastData,
+          isLoading: false
+        })
+      }.bind(this));
   },
   render: function () {
     return (
       <Forecast
-        isLoading={this.state.isLoading} />
+        isLoading={this.state.isLoading}
+        city={this.props.routeParams.city}
+        forecastData={this.state.forecastData} />
     )
   }
 });
