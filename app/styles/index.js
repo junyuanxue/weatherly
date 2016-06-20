@@ -10,9 +10,15 @@ var styles = {
     width: '100%'
   },
   h1: {
-    fontSize: 45,
+    fontSize: '3.3em',
     color: '#fff',
     fontWeight: 100,
+    marginTop: '1em'
+  },
+  h2: {
+    fontSize: '1.6em',
+    color: '#fff',
+    fontWeight: 100
   },
   headerContainer: {
     width: '100%',
@@ -36,14 +42,17 @@ var styles = {
     flexDirection: 'row',
     flexWrap: 'wrap',
     maxWidth: 1200,
-    margin: '50px auto'
+    margin: '4em auto'
   },
   dayContainer: {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
     flexDirection: 'column',
-    margin: 35
+    margin: '3em'
+  },
+  weather: {
+    height: '5em',
   }
 };
 

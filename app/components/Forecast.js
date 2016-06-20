@@ -2,6 +2,7 @@ var React = require('react');
 var PropTypes = React.PropTypes;
 var Loading = require('./Loading');
 var styles = require('../styles');
+var getDate = require('../helpers/utils');
 
 function Forecast (props) {
   return props.isLoading === true
@@ -23,9 +24,13 @@ function ForecastUI (props) {
 }
 
 function DayItem (props) {
+  var date = getDate(props.day.dt);
+  var icon = props.day.weather[0].icon;
+  var desc = props.day.weather[0].description;
   return (
     <div style={styles.dayContainer}>
-      Day Item
+      <img style={styles.weather} src={'./app/images/weather-icons/' + icon +'.svg'} alt={desc} />
+      <h2 style={styles.h2}> {date} </h2>
     </div>
   )
 }
