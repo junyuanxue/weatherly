@@ -24,7 +24,7 @@ function getForecast (city) {
   return axios.get(url)
     .then(function (forecast) {
       console.log('***FORECAST***' + city)
-      console.log(forecast.data)
+      console.log(forecast.data.list)
       return forecast.data.list;
     });
 }

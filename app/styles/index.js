@@ -13,12 +13,16 @@ var styles = {
     fontSize: '3.3em',
     color: '#fff',
     fontWeight: 100,
-    marginTop: '1em'
+    marginTop: '0.8em'
   },
   h2: {
-    fontSize: '1.6em',
+    fontSize: '1.5em',
     color: '#fff',
     fontWeight: 100
+  },
+  p: {
+    fontSize: '1.2em',
+    color: '#888888'
   },
   headerContainer: {
     width: '100%',
