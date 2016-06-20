@@ -8,3 +8,5 @@ function Detail (props) {
     </div>
   )
 }
+
+module.exports = Detail;
