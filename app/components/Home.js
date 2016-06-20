@@ -5,7 +5,7 @@ var GetCityContainer = require('../containers/GetCityContainer');
 function Home (props) {
   return (
     <div style={styles.container}  className='jumbotron text-center'>
-      <h1 style={styles.prompt}> Enter a City </h1>
+      <h1 style={styles.h1}> Enter a City </h1>
       <GetCityContainer />
     </div>
   )

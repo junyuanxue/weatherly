@@ -25,7 +25,7 @@ function getForecast (city) {
     .then(function (forecast) {
       console.log('***FORECAST***' + city)
       console.log(forecast.data)
-      return forecast.data;
+      return forecast.data.list;
     });
 }
 

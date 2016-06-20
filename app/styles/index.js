@@ -9,7 +9,7 @@ var styles = {
     height: '100%',
     width: '100%'
   },
-  prompt: {
+  h1: {
     fontSize: 45,
     color: '#fff',
     fontWeight: 100,

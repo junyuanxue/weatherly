@@ -6,7 +6,7 @@ var ForecastContainer = React.createClass({
   getInitialState: function () {
     return {
       isLoading: true,
-      forecastData: {}
+      forecast: []
     }
   },
   componentDidMount: function () {
@@ -19,7 +19,7 @@ var ForecastContainer = React.createClass({
     weatherApi.getForecast(city)
       .then(function (forecastData) {
         this.setState({
-          forecastData: forecastData,
+          forecast: forecastData,
           isLoading: false
         })
       }.bind(this));
@@ -29,7 +29,7 @@ var ForecastContainer = React.createClass({
       <Forecast
         isLoading={this.state.isLoading}
         city={this.props.routeParams.city}
-        forecastData={this.state.forecastData} />
+        forecast={this.state.forecast} />
     )
   }
 });
