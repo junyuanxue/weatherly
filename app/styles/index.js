@@ -1,7 +1,6 @@
 var styles = {
   container: {
-    backgroundSize: 'cover',
-    backgroundImage: "url('app/images/sky.jpg')",
+    background: 'transparent',
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',
@@ -13,7 +12,7 @@ var styles = {
     fontSize: '3.3em',
     color: '#fff',
     fontWeight: 100,
-    marginTop: '0.8em'
+    marginTop: '1.5em'
   },
   h2: {
     fontSize: '1.5em',
@@ -37,16 +36,15 @@ var styles = {
     padding: 5
   },
   margin: {
-    margin: '0.5em',
+    margin: '1em',
   },
   listContainer: {
     display: 'flex',
-    justifyContent: 'space-between',
     alignItems: 'center',
     flexDirection: 'row',
     flexWrap: 'wrap',
     maxWidth: 1200,
-    margin: '4em auto'
+    margin: '2.5em auto'
   },
   dayContainer: {
     display: 'flex',
