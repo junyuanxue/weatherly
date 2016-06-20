@@ -7,7 +7,10 @@ var getDate = require('../helpers/utils');
 function Forecast (props) {
   return props.isLoading === true
     ? <Loading />
-    : <ForecastUI city={props.city} forecast={props.forecast} />
+    : <ForecastUI
+        city={props.city}
+        forecast={props.forecast}
+        handleClick={props.handleClick} />
 }
 
 function ForecastUI (props) {
@@ -16,7 +19,7 @@ function ForecastUI (props) {
       <h1 style={styles.h1}> {props.city} </h1>
       <div style={styles.listContainer}>
         {props.forecast.map(function (day) {
-          return <DayItem key={day.dt} day={day} />
+          return <DayItem key={day.dt} day={day} handleClick={props.handleClick.bind(null, day)} />
         })}
       </div>
     </div>
@@ -30,7 +33,7 @@ function DayItem (props) {
   var maxTemp = props.day.temp.max;
   var minTemp = props.day.temp.min;
   return (
-    <div style={styles.dayContainer}>
+    <div style={styles.dayContainer} onClick={props.handleClick}>
       <img style={styles.weather} src={'./app/images/weather-icons/' + icon +'.svg'} alt={desc} />
       <p style={styles.h2}> {minTemp} °C / {maxTemp} °C </p>
       <h2 style={styles.h2}> {date} </h2>
@@ -41,7 +44,8 @@ function DayItem (props) {
 Forecast.propTypes = {
   isLoading: PropTypes.bool.isRequired,
   city: PropTypes.string.isRequired,
-  forecast: PropTypes.array.isRequired
+  forecast: PropTypes.array.isRequired,
+  handleClick: PropTypes.func.isRequired
 }
 
 module.exports = Forecast;

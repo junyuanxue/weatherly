@@ -49,7 +49,8 @@ var styles = {
     alignItems: 'center',
     justifyContent: 'center',
     flexDirection: 'column',
-    margin: '2em'
+    margin: '2em',
+    cursor: 'pointer'
   },
   weather: {
     height: '5em',
