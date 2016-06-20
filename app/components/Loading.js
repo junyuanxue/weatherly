@@ -1,10 +1,11 @@
 var React = require('react');
+var styles = require('../styles');
 
 function Loading () {
   return (
-    <h1>
-      Loading...
-    </h1>
+    <div style={styles.container}  className='jumbotron text-center'>
+      <h1 style={styles.h1}> Loading... </h1>
+    </div>
   )
 }
 
