@@ -49,10 +49,11 @@ var styles = {
     alignItems: 'center',
     justifyContent: 'center',
     flexDirection: 'column',
-    margin: '3em'
+    margin: '2em'
   },
   weather: {
     height: '5em',
+    marginBottom: '1.5em'
   }
 };
 
