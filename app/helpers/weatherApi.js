@@ -7,17 +7,6 @@ function _getQuery(city) {
   return '?q=' + city + '&type=accurate&units=metric&APPID=' + _API_KEY;
 }
 
-function getCurrentWeather (city) {
-  var query = _getQuery(city);
-  var url = _BASE_URL + 'weather' + query;
-  return axios.get(url)
-    .then(function (currentWeather) {
-      console.log('###CURRENT WEAHTER###')
-      console.log(currentWeather.data)
-      return currentWeather.data;
-    });
-}
-
 function getForecast (city) {
   var query = _getQuery(city);
   var url = _BASE_URL + 'forecast/daily' + query;
@@ -29,9 +18,4 @@ function getForecast (city) {
     });
 }
 
-var weatherApi = {
-  getCurrentWeather: getCurrentWeather,
-  getForecast: getForecast
-}
-
-module.exports = weatherApi;
+module.exports = getForecast;
