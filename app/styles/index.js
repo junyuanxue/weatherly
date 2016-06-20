@@ -28,6 +28,22 @@ var styles = {
   },
   margin: {
     margin: '0.5em',
+  },
+  listContainer: {
+    display: 'flex',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    maxWidth: 1200,
+    margin: '50px auto'
+  },
+  dayContainer: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    flexDirection: 'column',
+    margin: 35
   }
 };
 
