@@ -23,7 +23,7 @@ function getForecast (city) {
   var url = _BASE_URL + 'forecast/daily' + query;
   return axios.get(url)
     .then(function (forecast) {
-      console.log('***FORECAST***')
+      console.log('***FORECAST***' + city)
       console.log(forecast.data)
       return forecast.data;
     });
