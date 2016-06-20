@@ -7,7 +7,7 @@ var Main = React.createClass({
     return (
       <div style={styles.headerContainer}>
         <div style={styles.header}>
-          <h1>Weatherly</h1>
+          <h1> Weatherly </h1>
           <GetCityContainer direction='row' />
         </div>
       {this.props.children}
