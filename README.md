@@ -4,7 +4,6 @@
 Weatherly is a simple web app built with React that will fetch and display the weather forecast for your city.
 
 ## To use Weatherly :cloud: :snowflake:
-
 Clone this repo and install dependencies:
 ```
 $ git clone https://github.com/junyuanxue/weatherly.git
@@ -21,7 +20,7 @@ Once you've input your city, Weatherly will display the weather forecast for the
 
 ![Imgur](http://i.imgur.com/FkWZuEv.png)
 
-(Boo...London...:umbrella: :umbrella: :umbrella:)
+(Boo...London... :umbrella: :umbrella: :umbrella:)
 
 Click on each day for more details:
 
